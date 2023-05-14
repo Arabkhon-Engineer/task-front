@@ -47,6 +47,10 @@ li{
 
 .employee_indicator_title{
     background-color: var(--white);
+    color: var(--mainColor);
+    text-align: center;
+    margin-top: -10px;
+    padding: 0px 100px;
     font-weight: bolder 
 }
 
@@ -79,11 +83,72 @@ li{
 /* employee_analyst component style start*/
 .employee_analyst{
     padding: 20px;
+    height: 250px;
+    padding: 20px;
+    flex: 55%;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    background-color: var(--white);
 }
 
-.employee_analyst_table_items, .employee_analyst_main{
+.employee_analyst_main{
+    background-color: var(--white);
+}
+
+.employee_analyst_table_items{
     display: flex;
     justify-content: space-between;
+}
+
+.employee_analyst_table_item_box{
+    display: flex;
+}
+
+.employee_analyst_title{
+    background-color: var(--white);
+    font-weight: bold;
+    margin-top: -10px;
+    color: var(--mainColor);
+    padding: 0px 130px ;
+    text-align: center;
+}
+
+.employee_analyst_table_items{
+    background-color: var(--white);
+}
+
+.employee_analyst_table_item{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--white);
+    color: var(--mainColor);
+}
+
+td{
+    background-color: var(--white);
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.item1{ 
+    width: 100px;
+    border-right: 1px solid;
+}
+
+.item3{
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+.item5{
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+table {
+    background-color: var(--white);
+    text-align: center;
 }
 
 /* employee_analyst component style end*/
@@ -91,29 +156,79 @@ li{
 
 /*================= employee_task component style start =======================*/
 
-.employee_analyst{
-    padding: 20px;
-    flex: 55%;
-    height: 200px;
-    margin-bottom: 10px;
-    border-radius: 7px;
-    background-color: var(--white);
-}
 
 .employee_task_deadline_item{
     background-color: var(--white);
     display: flex;
 }
-/* employee_task component style end*/
 
 .employee_task{
     padding: 20px;
     flex: 40%;
-    height: 200px;
+    height: 250px;
     margin-bottom: 10px;
     border-radius: 7px;
     background-color: var(--white);
 }
+
+.employee_task_title{
+    color: var(--mainColor);
+    background-color: var(--white);
+    align-items: center ;
+    padding: 0px 50px;
+    transform: translateY(-10px);
+    text-align: center;
+    font-weight: bold;
+}
+
+.employee_task_deadline_item > span{
+    background-color: var(--white);
+}
+
+.employee_task_deadline_item_proc{
+    width: 80%;
+    background-color: var(--white);
+    height: 45px;
+    transform: translateY(-14px);
+}
+
+.employee_task_deadline_item_proc_user{
+    background-color: var(--white);
+    font-size: 12px;
+}
+
+.line30, .line40, .line60, .line80{
+    position: relative;
+    width: 90%;
+    height: 10px;
+    z-index: 1;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: rgb(182, 138, 223);
+}
+
+.line_font{
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    height: 10px;
+    background-color: blue;
+}
+
+.line_font30{
+    width: 30%;
+}
+.line_font40{
+    width: 40%;
+}
+.line_font60{
+    width: 60%;
+}
+.line_font80{
+    width: 80%;
+}
+
+/* employee_task component style end*/
 /* sector component style start*/
 
 .task_sector {
@@ -128,6 +243,8 @@ li{
     transform: translateX(10vw);
     font-size: 18px;
     width: 60%;
+    color: var(--mainColor);
+    margin-top: -10px;
     text-align: center;
     background-color: var(--white);
 }

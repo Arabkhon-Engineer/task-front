@@ -5,9 +5,7 @@ export const EmployeeTask = () => {
   return (
     <div className="employee_task">
       <div className="employee_task_title">
-        <h4>
-          Mas'ul xodimlar topshiriqlarni o'z vaqtida bajarish ko'rsatgichi
-        </h4>
+        Mas'ul xodimlar topshiriqlarni o'z vaqtida bajarish ko'rsatgichi
       </div>
       <div className="employee_task_deadline">
         <ol className="employee_task_deadline_items">
@@ -15,7 +13,13 @@ export const EmployeeTask = () => {
             return (
               <li key={index} className="employee_task_deadline_item">
                 <span>{deadline.id}. </span>
-                <p>{deadline.employeeName} {deadline.employeeLastName} </p>
+                <div className="employee_task_deadline_item_proc">
+                  <span className="employee_task_deadline_item_proc_user">
+                    {deadline.employeeName} {deadline.employeeLastName}
+                  </span>
+                  <p className={"line" + deadline.deadline }>
+                    <span className={"line_font line_font" + deadline.deadline }></span> </p>
+                </div>
                 <span>{deadline.deadline}%</span>
               </li>
             );

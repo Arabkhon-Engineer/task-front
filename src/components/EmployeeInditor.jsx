@@ -14,12 +14,14 @@ export const EmployeeInditor = () => {
             <div className="box">box</div>
           </div>
           <div className="employee_indicator_right">
+            <div className="employee_indicator_right_item">
             {
               companyIndicator.map((work)=>{
-                return <li className="employee_indicator_right_items" key={work?.id}><p></p><span>{work?.indicator}% - {work?.condition}</span></li>
-               
+                return <li className="employee_indicator_right_item" key={work?.id}><p className="employee_indicator_right_item_p"></p><span>{work?.indicator}% - {work?.condition}</span></li>
+                
               })
             }
+            </div>
           </div>
         </div>
     </div>
