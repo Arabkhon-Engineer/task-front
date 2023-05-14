@@ -2,6 +2,11 @@ li{
     list-style: none;
 }
 
+.employee_indicator_left_circle, .employee_indicator_left, .employee_indicator, .employee_indicator_title, .employee_analyst, .employee_analyst_main, .employee_analyst_title, .employee_analyst_table_item, .employee_analyst_table_items, td, .employee_task_deadline_item, table, .employee_task, .employee_task_title, .employee_task_deadline_item > span, .employee_task_deadline_item_proc .employee_task_deadline_item_proc_user, .task_sector, .task_sector_title, .task_sector_items, .task_sector_item > p, .task_sector_item, .employee_indicator_right_item, .employee_indicator_right_item_condition
+{
+    background-color: var(--white);
+}
+
 .sector_box {
   margin-top: 10px;
   position: relative;
@@ -38,7 +43,6 @@ li{
 
 .employee_indicator {
     position: relative;
-  background-color: var(--white);
   padding: 20px;
   flex: 40%;
   height: 280px;
@@ -46,7 +50,6 @@ li{
 }
 
 .employee_indicator_title{
-    background-color: var(--white);
     color: var(--mainColor);
     text-align: center;
     margin-top: -10px;
@@ -58,21 +61,81 @@ li{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    background-color: var(--white);
     margin-top: 20px;
 }
+
 .employee_indicator_left{
-    border: 1px solid;
-    flex: 50%;
+    border: 10px solid pink;
+    border-block-start-color: red;
+    border-inline-start-color: blue;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.employee_indicator_left_circle{
+    width: 60px;
+    margin: 20px 30px;
+    margin-top: 40px;
+    font-size: 32px;
+    place-content: center;
+    background-color: var(--white);
+}
+
+.employee_indicator_left_circle_p{
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
 }
 
 .employee_indicator_right{
     flex: 50%;
-
-}
-
-.employee_indicator_right{
     line-height: 40px;
     font-weight: bold;
+}
+
+.employee_indicator_right_item{
+    display: flex;
+}
+.employee_indicator_right_item > span{
+    margin: 0px 10px;
+    display: block;
+    font-size: 14px;
+    background-color: var(--white);
+}
+
+
+.employee_indicator_right_item_p{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.symbol30{
+    background-color: var(--blue100);
+}
+.symbol35{
+    background-color: var(--blue70);
+}
+.symbol15{
+    background-color: var(--blue30);
+}
+.symbol20{
+    background-color: var(--blue10);
+}
+
+.employee_indicator_right_item_condition{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--mainColor);
+    text-transform: capitalize;
 }
 
 /* employee_indicator component style end*/
@@ -88,12 +151,8 @@ li{
     flex: 55%;
     margin-bottom: 10px;
     border-radius: 7px;
-    background-color: var(--white);
 }
 
-.employee_analyst_main{
-    background-color: var(--white);
-}
 
 .employee_analyst_table_items{
     display: flex;
@@ -104,8 +163,8 @@ li{
     display: flex;
 }
 
+
 .employee_analyst_title{
-    background-color: var(--white);
     font-weight: bold;
     margin-top: -10px;
     color: var(--mainColor);
@@ -113,20 +172,15 @@ li{
     text-align: center;
 }
 
-.employee_analyst_table_items{
-    background-color: var(--white);
-}
 
 .employee_analyst_table_item{
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 14px;
     font-weight: 400;
-    background-color: var(--white);
     color: var(--mainColor);
 }
 
 td{
-    background-color: var(--white);
     line-height: 30px;
     font-size: 14px;
 }
@@ -139,6 +193,7 @@ td{
 .item3{
     border-right: 1px solid;
     border-left: 1px solid;
+    width: 100px;
 }
 
 .item5{
@@ -147,7 +202,6 @@ td{
 }
 
 table {
-    background-color: var(--white);
     text-align: center;
 }
 
@@ -158,7 +212,6 @@ table {
 
 
 .employee_task_deadline_item{
-    background-color: var(--white);
     display: flex;
 }
 
@@ -168,12 +221,12 @@ table {
     height: 250px;
     margin-bottom: 10px;
     border-radius: 7px;
-    background-color: var(--white);
 }
+
+
 
 .employee_task_title{
     color: var(--mainColor);
-    background-color: var(--white);
     align-items: center ;
     padding: 0px 50px;
     transform: translateY(-10px);
@@ -181,9 +234,6 @@ table {
     font-weight: bold;
 }
 
-.employee_task_deadline_item > span{
-    background-color: var(--white);
-}
 
 .employee_task_deadline_item_proc{
     width: 80%;
@@ -193,7 +243,6 @@ table {
 }
 
 .employee_task_deadline_item_proc_user{
-    background-color: var(--white);
     font-size: 12px;
 }
 
@@ -235,7 +284,6 @@ table {
     padding: 15px;
     border-radius: 7px;
     flex: 55%;
-    background-color: var(--white);
 }
 
 .task_sector_title{
@@ -246,22 +294,18 @@ table {
     color: var(--mainColor);
     margin-top: -10px;
     text-align: center;
-    background-color: var(--white);
 }
 
-.task_sector_items{
-    background-color: var(--white);
-}
 
 .task_sector_item > p{
     color: var(--mainColor);
     font-weight: bold;
-    background-color: var(--white);
 }
+
+
 
 .task_sector_item {
     display: flex;
-    background-color: var(--white);
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -271,8 +315,8 @@ table {
     margin: 10px 0px;
     width: 70%;
     display: flex;
-    background-color: var(--white);
     justify-content: space-between;
+    background-color: var(--white);
 }
 
 .indicator_items > div{
@@ -282,7 +326,7 @@ table {
 .indicator_item1{
     width: 80%;
     z-index: 10;
-    background-color: rgb(62, 20, 102);
+    background-color: var(--blue100);
 }
 .indicator_item2{
     border-bottom-left-radius: 0px;
@@ -290,19 +334,19 @@ table {
     transform: translateX(-18px);
     z-index: 9;
     width: 40%;
-    background-color: rgb(130, 40, 208);
+    background-color: var(--blue70);
 }
 .indicator_item3{
     z-index: 8;
     width: 30%;
-    transform: translateX(-33px);
-    background-color: rgb(139, 77, 198);
+    transform: translateX(-35px);
+    background-color: var(--blue30);
 }
 .indicator_item4{
     z-index: 7;
-    transform: translateX(-50px);
+    transform: translateX(-52px);
     width: 30%;
-    background-color: rgb(75, 153, 197);
+    background-color: var(--blue10);
 }
 
 /* sector component style end*/

@@ -63,7 +63,7 @@ export const companyIndicator = [
         indicator: 20,
         condition : "bajarilmadi"
     },
-    
+        
 ];
 
 
@@ -89,3 +89,5 @@ export const workIndicator = [
         indicItem: [63, 19,9,9],
     },
 ]
+
+export const companyIndicatorTotal = companyIndicator[0].indicator + companyIndicator[1].indicator + companyIndicator[2].indicator

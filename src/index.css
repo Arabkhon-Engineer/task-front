@@ -1,8 +1,12 @@
 :root {
-  --mainColor: rgb(12, 12, 134);
+  --mainColor: rgb(26, 26, 172);
   --mainBackColor: #f7f0f0;
   --white: #fff;
   --dark: #363636;
+  --blue10: rgb(184, 209, 223);
+  --blue30: rgb(99, 93, 179);
+  --blue70: rgb(69, 63, 158);
+  --blue100: rgb(89, 34, 141);
   line-height: 1.5;
 
   color-scheme: light dark;
@@ -45,5 +49,11 @@ a {
   outline: none;
   border: none;
   text-transform: capitalize;
+  font-weight: 600;
 }
+
+.heroSelectMain select option{
+  font-weight: bold;
+}
+
 /* heroselect component style end */
