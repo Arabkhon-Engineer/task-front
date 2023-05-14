@@ -1,0 +1,49 @@
+:root {
+  --mainColor: rgb(12, 12, 134);
+  --mainBackColor: #f7f0f0;
+  --white: #fff;
+  --dark: #363636;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  background-color: #ccc;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 10px;
+}
+
+/* heroselect component style start */
+.heroSelectMain {
+  transform: translateY(20px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heroSelectMain select{
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+/* heroselect component style end */
