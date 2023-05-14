@@ -1,4 +1,3 @@
-import ChartItem from "./components/Chart";
 import { Home } from "./pages/Home";
 
 function App() {

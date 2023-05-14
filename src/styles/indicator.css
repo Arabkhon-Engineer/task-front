@@ -66,9 +66,13 @@ li{
 }
 
 .employee_indicator_left{
-    border: 10px solid pink;
-    border-block-start-color: red;
-    border-inline-start-color: blue;
+    transform: rotate(-30deg);
+    border: 25px solid pink;
+    border-block-start-color: var(--blue30);
+    border-inline-start-color: var(--blue100);
+    border-block-end-color: var(--blue10);
+    border-inline-end-color: var(--blue30);
+    border
     margin-left: 20px;
     width: 150px;
     height: 150px;
@@ -77,8 +81,9 @@ li{
 
 .employee_indicator_left_circle{
     width: 60px;
-    margin: 20px 30px;
-    margin-top: 40px;
+    transform: rotate(30deg);
+    margin-left: 25px;
+    margin-top: 25px;
     font-size: 32px;
     place-content: center;
     background-color: var(--white);
